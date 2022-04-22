@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="style.css">
+
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <div class="container">
+    <form action="" method="GET">
+      <h1>Payment Form</h1>
+      <hr>
+      <p>Required Fields are followed by *</p>
+      <h2>Contact Information</h2>
+      <p>
+        Name: 
+        <input type="text" name="" id="name" placeholder="name"required></p>
+      <fieldset>
+        <legend>Gender</legend>
+        <p>
+          Male <input type="radio" name="gender" id="male" required>
+          Female <input type="radio" name="gender" id="female " required>
+          Other <input type="radio" name="gender" id="other" required>
+        </p>
+      </fieldset>
+      <p>
+        Address: 
+        <textarea name="address"placeholder="Enter Your Address" id="address" cols="80" rows="10" required></textarea>
+      </p>
+      <p>
+        Email:
+        <input type="email" name="email" id="email" required></p>
+      <p>Pincode:
+         <input type="number" name="pincode" id="pincode" required></p>
+      <h2>Payment Information</h2>
+      <p>Accepted Cards</p>
+      <img src="img/visa_PNG32.png" alt="This is an image ">
+        <img src="img/701549_bank_card_payment_rupay_icon.png" alt="This is an image ">
+        <img src="img/mastercard_PNG26.png" alt="This is an image">
+
+
+      <p>Card Type:
+        <select name="card_type" id="card_type" required>
+          <option value="">--Select a Card Type--</option>
+          <option value="visa">Visa</option>
+          <option value="rupay">Rupay</option>
+          <option value="mastercard">Mastercard</option>
+        </select>
+
+      </p>
+      <p>
+        Card Number: <input type="number" name="card_number" id="card_number" required>
+      </p>
+      <p>
+        Expiry Date: <input type="date" name="exp_date" id="exp_date" required>
+      </p>
+      <p>CVV <input type="password" name="cvv" id="cvv" required></p>
+      <input type="submit" value="Pay">
+
+   
+      
+    </form>
+    </div>
+
+  </body>
+</html>
